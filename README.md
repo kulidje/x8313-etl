@@ -6,3 +6,9 @@ This is the Core ETL Pipeline code used for collecting and processing historical
 A simple but tedious collection of pre-processing wrappers used for reading raw-data and transforming it to clean processed Pandas DataFrames which get stored in an AWS RDS Data Lake.
 
 Not sexy, but massively time-consuming (in the short-run), time-saving (in the long-run) and essential to any data-analysis project.
+
+**Key Features**
+
+* Stateful Data Loading (historical data can be loaded at specified time-of-day i.e. pre/play/post)
+    * Scratch Handling
+* .update() method for real-time race-betting
