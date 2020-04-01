@@ -1,6 +1,8 @@
 # X8313 Extract Transform Load Code
-Code excerpt from X8313 Inc. This is the core ETL Pipeline code used for collecting and processing historical horse racing data from various proprietary data sources.
+The following is a code excerpt from X8313 Inc. and not necessarily fully functional. The purpose of this repo is only to showcase my work and not intended for use.
 
-Simple but tedious pre-processing wrapper for taking raw-data and transforming into clean processed Pandas DataFrames. 
+This is the Core ETL Pipeline code used for collecting and processing historical horse-racing data from X8313's various proprietary data sources.
 
-Not sexy, but massively time-consuming, time-saving and essential to any data-analysis project.
+A simple but tedious collection of pre-processing wrappers used for reading raw-data and transforming it to clean processed Pandas DataFrames which get stored in an AWS RDS Data Lake.
+
+Not sexy, but massively time-consuming (in the short-run), time-saving (in the long run) and essential to any data-analysis project.
