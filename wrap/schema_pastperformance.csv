@@ -1,0 +1,1436 @@
+field_index,field_name,target_type,notes
+1,jcp_track_sym,str,
+2,date,datetime.date,
+3,race_race_num,str,
+4,program_post_pos,int,
+5,runner_entry,str,
+6,race_distance,int,
+7,race_surface,type_surface,
+8,race_time,datetime.time,
+9,race_race_type,type_race_type,
+10,race_age_sex_restriction,type_age_sex_restriction,
+11,race_race_classification,str,check if exists
+12,race_purse,int,
+13,race_claiming_price_race,int,
+14,horse_claiming_price,int,
+15,race_track_record,datetime.time_interval,
+16,race_race_conditions,str,
+17,race_lasix_list,str,
+18,race_bute_list,str,
+19,race_coupled_list,str,
+20,race_mutuel_list,str,
+21,race_simulcast_host_track_code,str,unused
+22,race_simulcast_host_track_racenum,str,unused
+23,race_breed_type,str,
+24,runner_nasal_strip_change,str,
+25,race_all_weather_flag,bool,True == all_weather
+26,race_reserved_2,str,
+27,race_reserved_3,str,
+28,trainer,str,check if exists
+29,runner_trainer_starts_meet,int,
+30,runner_trainer_wins_meet,int,
+31,runner_trainer_places_meet,int,
+32,runner_trainer_shows_meet,int,
+33,jockey,str,check if exists
+34,apprentice_weight_alw,int,has nan in possible vals
+35,runner_jockey_starts_meet,int,
+36,runner_jockey_wins_meet,int,
+37,runner_jockey_places_meet,int,
+38,runner_jockey_shows_meet,int,
+39,runner_owner,str,check if exists
+40,runner_owner_silks,str,
+41,main_track_or_ae,type_main_indicator,flag
+42,race_conditions,str,
+43,runner_program_number,str,
+44,runner_morning_line_odds,float,
+45,name,str,check if exists
+46,runner_birthdate_year,datetime.date.year,
+47,runner_birthdate_act,datetime.date.month,
+48,runner_speed_HDW_bestCramerDirt,float,
+49,runner_sex,type_sex,
+50,runner_color,type_color,
+51,runner_weight,float,
+52,runner_sire,str,check if exists
+53,runner_sire_sire,str,check if exists
+54,runner_dam,str,check if exists
+55,runner_dam_sire,str,check if exists
+56,runner_breeder,str,check if exists
+57,runner_state_country_bred,str,check if exists
+58,runner_program_post_position,int,
+59,runner_rider_ROI_track,float,
+60,runner_trainer_ROI_track,float,
+61,gelded_since_last_start,bool,
+62,runner_medication_1,*type_medication,
+63,runner_medication_2,*type_medication,
+64,runner_equipment_change,*equipment_change,
+65,runner_horse_lifetime_starts_distance,float,
+66,runner_horse_lifetime_wins_distance,float,
+67,runner_horse_lifetime_place_distance,float,
+68,runner_horse_lifetime_show_distance,float,
+69,runner_horse_lifetime_earnings_distance,float,
+70,runner_horse_lifetime_starts_track,float,
+71,runner_horse_lifetime_wins_track,float,
+72,runner_horse_lifetime_place_track,float,
+73,runner_horse_lifetime_show_track,float,
+74,runner_horse_lifetime_earnings_track,float,
+75,runner_horse_lifetime_starts_turf,float,
+76,runner_horse_lifetime_wins_turf,float,
+77,runner_horse_lifetime_place_turf,float,
+78,runner_horse_lifetime_show_turf,float,
+79,runner_horse_lifetime_earnings_turf,float,
+80,runner_horse_lifetime_starts_wet,float,
+81,runner_horse_lifetime_wins_wet,float,
+82,runner_horse_lifetime_place_wet,float,
+83,runner_horse_lifetime_show_wet,float,
+84,runner_horse_lifetime_earnings_wet,float,
+85,runner_horse_currentYear,datetime.date.year,
+86,runner_horse_currentYear_starts,float,
+87,runner_horse_currentYear_wins,float,
+88,runner_horse_currentYear_place,float,
+89,runner_horse_currentYear_show,float,
+90,runner_horse_currentYear_earnings,float,
+91,runner_horse_prevYear,datetime.date.year,
+92,runner_horse_prevYear_starts,float,
+93,runner_horse_prevYear_wins,float,
+94,runner_horse_prevYear_place,float,
+95,runner_horse_prevYear_show,float,
+96,runner_horse_prevYear_earnings,float,
+97,runner_horse_lifetime_starts,float,
+98,runner_horse_lifetime_wins,float,
+99,runner_horse_lifetime_place,float,
+100,runner_horse_lifetime_show,float,
+101,runner_horse_lifetime_earnings,float,
+102,wk_date_1,datetime.date,
+103,wk_date_2,datetime.date,
+104,wk_date_3,datetime.date,
+105,wk_date_4,datetime.date,
+106,wk_date_5,datetime.date,
+107,wk_date_6,datetime.date,
+108,wk_date_7,datetime.date,
+109,wk_date_8,datetime.date,
+110,wk_date_9,datetime.date,
+111,wk_date_10,datetime.date,
+112,wk_date_11,datetime.date,
+113,wk_date_12,datetime.date,
+114,wk_time_1,datetime.time_interval,
+115,wk_time_2,datetime.time_interval,
+116,wk_time_3,datetime.time_interval,
+117,wk_time_4,datetime.time_interval,
+118,wk_time_5,datetime.time_interval,
+119,wk_time_6,datetime.time_interval,
+120,wk_time_7,datetime.time_interval,
+121,wk_time_8,datetime.time_interval,
+122,wk_time_9,datetime.time_interval,
+123,wk_time_10,datetime.time_interval,
+124,wk_time_11,datetime.time_interval,
+125,wk_time_12,datetime.time_interval,
+126,wk_track_1,x8_track_sym,
+127,wk_track_2,x8_track_sym,
+128,wk_track_3,x8_track_sym,
+129,wk_track_4,x8_track_sym,
+130,wk_track_5,x8_track_sym,
+131,wk_track_6,x8_track_sym,
+132,wk_track_7,x8_track_sym,
+133,wk_track_8,x8_track_sym,
+134,wk_track_9,x8_track_sym,
+135,wk_track_10,x8_track_sym,
+136,wk_track_11,x8_track_sym,
+137,wk_track_12,x8_track_sym,
+138,wk_dist_1,float,
+139,wk_dist_2,float,
+140,wk_dist_3,float,
+141,wk_dist_4,float,
+142,wk_dist_5,float,
+143,wk_dist_6,float,
+144,wk_dist_7,float,
+145,wk_dist_8,float,
+146,wk_dist_9,float,
+147,wk_dist_10,float,
+148,wk_dist_11,float,
+149,wk_dist_12,float,
+150,wk_tkcond_1,type_tkcond,
+151,wk_tkcond_2,type_tkcond,
+152,wk_tkcond_3,type_tkcond,
+153,wk_tkcond_4,type_tkcond,
+154,wk_tkcond_5,type_tkcond,
+155,wk_tkcond_6,type_tkcond,
+156,wk_tkcond_7,type_tkcond,
+157,wk_tkcond_8,type_tkcond,
+158,wk_tkcond_9,type_tkcond,
+159,wk_tkcond_10,type_tkcond,
+160,wk_tkcond_11,type_tkcond,
+161,wk_tkcond_12,type_tkcond,
+162,wk_descr_1,type_wk_descr,
+163,wk_descr_2,type_wk_descr,
+164,wk_descr_3,type_wk_descr,
+165,wk_descr_4,type_wk_descr,
+166,wk_descr_5,type_wk_descr,
+167,wk_descr_6,type_wk_descr,
+168,wk_descr_7,type_wk_descr,
+169,wk_descr_8,type_wk_descr,
+170,wk_descr_9,type_wk_descr,
+171,wk_descr_10,type_wk_descr,
+172,wk_descr_11,type_wk_descr,
+173,wk_descr_12,type_wk_descr,
+174,wk_main_indicator_1,type_wk_main_indicator,
+175,wk_main_indicator_2,type_wk_main_indicator,
+176,wk_main_indicator_3,type_wk_main_indicator,
+177,wk_main_indicator_4,type_wk_main_indicator,
+178,wk_main_indicator_5,type_wk_main_indicator,
+179,wk_main_indicator_6,type_wk_main_indicator,
+180,wk_main_indicator_7,type_wk_main_indicator,
+181,wk_main_indicator_8,type_wk_main_indicator,
+182,wk_main_indicator_9,type_wk_main_indicator,
+183,wk_main_indicator_10,type_wk_main_indicator,
+184,wk_main_indicator_11,type_wk_main_indicator,
+185,wk_main_indicator_12,type_wk_main_indicator,
+186,wk_numAtDistance_1,int,
+187,wk_numAtDistance_2,int,
+188,wk_numAtDistance_3,int,
+189,wk_numAtDistance_4,int,
+190,wk_numAtDistance_5,int,
+191,wk_numAtDistance_6,int,
+192,wk_numAtDistance_7,int,
+193,wk_numAtDistance_8,int,
+194,wk_numAtDistance_9,int,
+195,wk_numAtDistance_10,int,
+196,wk_numAtDistance_11,int,
+197,wk_numAtDistance_12,int,
+198,wk_rank_1,int,
+199,wk_rank_2,int,
+200,wk_rank_3,int,
+201,wk_rank_4,int,
+202,wk_rank_5,int,
+203,wk_rank_6,int,
+204,wk_rank_7,int,
+205,wk_rank_8,int,
+206,wk_rank_9,int,
+207,wk_rank_10,int,
+208,wk_rank_11,int,
+209,wk_rank_12,int,
+210,runner_HDW_runstyle,type_HDW_runstyle,
+211,runner_speed_speedPoints,float,
+212,runner_unique_hdw_runstyle,str,flag
+213,runner_unique_alternate_speed,float,
+214,race_pace_HDW_par_2f_level,float,
+215,race_pace_HDW_par_4f_level,float,
+216,race_pace_HDW_par_6f_level,float,
+217,race_speed_HDW_par_class_level,float,
+218,race_pace_HDW_par_late_level,float,
+219,race_reserved_219,str,flag
+220,race_reserved_220,str,flag
+221,race_reserved_221,str,flag
+222,race_reserved_222,str,flag
+223,race_reserved_223,str,flag
+224,days_since_last_race,datetime.time_interval,unit = days
+225,race_race_conditions_1,str,
+226,race_race_conditions_2,str,
+227,race_race_conditions_3,str,
+228,race_race_conditions_4,str,
+229,race_race_conditions_5,str,
+230,race_race_conditions_6,str,
+231,runner_lifetime_starts_allweather,float,
+232,runner_lifetime_wins_allweather,float,
+233,runner_lifetime_place_allweather,float,
+234,runner_lifetime_show_allweather,float,
+235,runner_lifetime_earnings_allweather,float,
+236,runner_speed_HDW_best_allweather,float,
+237,race_reserved_237,str,flag
+238,race_claiming_price_low,float,unit = USD
+239,race_statebred_flag,bool,
+240,race_wagertype_1,str,
+241,race_wagertype_2,str,
+242,race_wagertype_3,str,
+243,race_wagertype_4,str,
+244,race_wagertype_5,str,
+245,race_wagertype_6,str,
+246,race_wagertype_7,str,
+247,race_wagertype_8,str,
+248,race_wagertype_9,str,
+249,race_reserved_249,str,flag
+250,race_reserved_250,str,flag
+251,runner_HDWPSRRating,float,
+252,race_reserved_252,str,flag
+253,race_reserved_253,str,flag
+254,race_reserved_254,str,flag
+255,race_reserved_255,str,flag
+256,pp_date_0,datetime.date,
+257,pp_date_1,datetime.date,
+258,pp_date_2,datetime.date,
+259,pp_date_3,datetime.date,
+260,pp_date_4,datetime.date,
+261,pp_date_5,datetime.date,
+262,pp_date_6,datetime.date,
+263,pp_date_7,datetime.date,
+264,pp_date_8,datetime.date,
+265,pp_date_9,datetime.date,
+266,pp_numdays_0,datetime.time_interval,unit = days
+267,pp_numdays_1,datetime.time_interval,unit = days
+268,pp_numdays_2,datetime.time_interval,unit = days
+269,pp_numdays_3,datetime.time_interval,unit = days
+270,pp_numdays_4,datetime.time_interval,unit = days
+271,pp_numdays_5,datetime.time_interval,unit = days
+272,pp_numdays_6,datetime.time_interval,unit = days
+273,pp_numdays_7,datetime.time_interval,unit = days
+274,pp_numdays_8,datetime.time_interval,unit = days
+275,pp_numdays_9,datetime.time_interval,unit = days
+276,pp_track_0,x8_track_sym,
+277,pp_track_1,x8_track_sym,
+278,pp_track_2,x8_track_sym,
+279,pp_track_3,x8_track_sym,
+280,pp_track_4,x8_track_sym,
+281,pp_track_5,x8_track_sym,
+282,pp_track_6,x8_track_sym,
+283,pp_track_7,x8_track_sym,
+284,pp_track_8,x8_track_sym,
+285,pp_track_9,x8_track_sym,
+286,pp_track_code_0,x8_track_sym,
+287,pp_track_code_1,x8_track_sym,
+288,pp_track_code_2,x8_track_sym,
+289,pp_track_code_3,x8_track_sym,
+290,pp_track_code_4,x8_track_sym,
+291,pp_track_code_5,x8_track_sym,
+292,pp_track_code_6,x8_track_sym,
+293,pp_track_code_7,x8_track_sym,
+294,pp_track_code_8,x8_track_sym,
+295,pp_track_code_9,x8_track_sym,
+296,pp_racenum_0,int,
+297,pp_racenum_1,int,
+298,pp_racenum_2,int,
+299,pp_racenum_3,int,
+300,pp_racenum_4,int,
+301,pp_racenum_5,int,
+302,pp_racenum_6,int,
+303,pp_racenum_7,int,
+304,pp_racenum_8,int,
+305,pp_racenum_9,int,
+306,pp_tkcond_0,type_pp_tkcond,
+307,pp_tkcond_1,type_pp_tkcond,
+308,pp_tkcond_2,type_pp_tkcond,
+309,pp_tkcond_3,type_pp_tkcond,
+310,pp_tkcond_4,type_pp_tkcond,
+311,pp_tkcond_5,type_pp_tkcond,
+312,pp_tkcond_6,type_pp_tkcond,
+313,pp_tkcond_7,type_pp_tkcond,
+314,pp_tkcond_8,type_pp_tkcond,
+315,pp_tkcond_9,type_pp_tkcond,
+316,pp_dist_0,float,unit = yards
+317,pp_dist_1,float,unit = yards
+318,pp_dist_2,float,unit = yards
+319,pp_dist_3,float,unit = yards
+320,pp_dist_4,float,unit = yards
+321,pp_dist_5,float,unit = yards
+322,pp_dist_6,float,unit = yards
+323,pp_dist_7,float,unit = yards
+324,pp_dist_8,float,unit = yards
+325,pp_dist_9,float,unit = yards
+326,pp_surface_0,type_pp_surface,
+327,pp_surface_1,type_pp_surface,
+328,pp_surface_2,type_pp_surface,
+329,pp_surface_3,type_pp_surface,
+330,pp_surface_4,type_pp_surface,
+331,pp_surface_5,type_pp_surface,
+332,pp_surface_6,type_pp_surface,
+333,pp_surface_7,type_pp_surface,
+334,pp_surface_8,type_pp_surface,
+335,pp_surface_9,type_pp_surface,
+336,pp_chute_0,type_pp_chute,
+337,pp_chute_1,type_pp_chute,
+338,pp_chute_2,type_pp_chute,
+339,pp_chute_3,type_pp_chute,
+340,pp_chute_4,type_pp_chute,
+341,pp_chute_5,type_pp_chute,
+342,pp_chute_6,type_pp_chute,
+343,pp_chute_7,type_pp_chute,
+344,pp_chute_8,type_pp_chute,
+345,pp_chute_9,type_pp_chute,
+346,pp_fieldsize_0,float,
+347,pp_fieldsize_1,float,
+348,pp_fieldsize_2,float,
+349,pp_fieldsize_3,float,
+350,pp_fieldsize_4,float,
+351,pp_fieldsize_5,float,
+352,pp_fieldsize_6,float,
+353,pp_fieldsize_7,float,
+354,pp_fieldsize_8,float,
+355,pp_fieldsize_9,float,
+356,pp_postposition_0,int,
+357,pp_postposition_1,int,
+358,pp_postposition_2,int,
+359,pp_postposition_3,int,
+360,pp_postposition_4,int,
+361,pp_postposition_5,int,
+362,pp_postposition_6,int,
+363,pp_postposition_7,int,
+364,pp_postposition_8,int,
+365,pp_postposition_9,int,
+366,pp_equipment_0,type_pp_equipment,
+367,pp_equipment_1,type_pp_equipment,
+368,pp_equipment_2,type_pp_equipment,
+369,pp_equipment_3,type_pp_equipment,
+370,pp_equipment_4,type_pp_equipment,
+371,pp_equipment_5,type_pp_equipment,
+372,pp_equipment_6,type_pp_equipment,
+373,pp_equipment_7,type_pp_equipment,
+374,pp_equipment_8,type_pp_equipment,
+375,pp_equipment_9,type_pp_equipment,
+376,pp_reserved_0,str,flag
+377,pp_reserved_1,str,flag
+378,pp_reserved_2,str,flag
+379,pp_reserved_3,str,flag
+380,pp_reserved_4,str,flag
+381,pp_reserved_5,str,flag
+382,pp_reserved_6,str,flag
+383,pp_reserved_7,str,flag
+384,pp_reserved_8,str,flag
+385,pp_reserved_9,str,flag
+386,pp_medication_0,*type_pp_medication,
+387,pp_medication_1,*type_pp_medication,
+388,pp_medication_2,*type_pp_medication,
+389,pp_medication_3,*type_pp_medication,
+390,pp_medication_4,*type_pp_medication,
+391,pp_medication_5,*type_pp_medication,
+392,pp_medication_6,*type_pp_medication,
+393,pp_medication_7,*type_pp_medication,
+394,pp_medication_8,*type_pp_medication,
+395,pp_medication_9,*type_pp_medication,
+396,pp_comment_0,str,natural language
+397,pp_comment_1,str,natural language
+398,pp_comment_2,str,natural language
+399,pp_comment_3,str,natural language
+400,pp_comment_4,str,natural language
+401,pp_comment_5,str,natural language
+402,pp_comment_6,str,natural language
+403,pp_comment_7,str,natural language
+404,pp_comment_8,str,natural language
+405,pp_comment_9,str,natural language
+406,pp_winner_name_0,str,check if exists
+407,pp_winner_name_1,str,check if exists
+408,pp_winner_name_2,str,check if exists
+409,pp_winner_name_3,str,check if exists
+410,pp_winner_name_4,str,check if exists
+411,pp_winner_name_5,str,check if exists
+412,pp_winner_name_6,str,check if exists
+413,pp_winner_name_7,str,check if exists
+414,pp_winner_name_8,str,check if exists
+415,pp_winner_name_9,str,check if exists
+416,pp_second_name_0,str,check if exists
+417,pp_second_name_1,str,check if exists
+418,pp_second_name_2,str,check if exists
+419,pp_second_name_3,str,check if exists
+420,pp_second_name_4,str,check if exists
+421,pp_second_name_5,str,check if exists
+422,pp_second_name_6,str,check if exists
+423,pp_second_name_7,str,check if exists
+424,pp_second_name_8,str,check if exists
+425,pp_second_name_9,str,check if exists
+426,pp_third_name_0,str,check if exists
+427,pp_third_name_1,str,check if exists
+428,pp_third_name_2,str,check if exists
+429,pp_third_name_3,str,check if exists
+430,pp_third_name_4,str,check if exists
+431,pp_third_name_5,str,check if exists
+432,pp_third_name_6,str,check if exists
+433,pp_third_name_7,str,check if exists
+434,pp_third_name_8,str,check if exists
+435,pp_third_name_9,str,check if exists
+436,pp_winner_weight_0,float,unit = pounds
+437,pp_winner_weight_1,float,unit = pounds
+438,pp_winner_weight_2,float,unit = pounds
+439,pp_winner_weight_3,float,unit = pounds
+440,pp_winner_weight_4,float,unit = pounds
+441,pp_winner_weight_5,float,unit = pounds
+442,pp_winner_weight_6,float,unit = pounds
+443,pp_winner_weight_7,float,unit = pounds
+444,pp_winner_weight_8,float,unit = pounds
+445,pp_winner_weight_9,float,unit = pounds
+446,pp_second_weight_0,float,unit = pounds
+447,pp_second_weight_1,float,unit = pounds
+448,pp_second_weight_2,float,unit = pounds
+449,pp_second_weight_3,float,unit = pounds
+450,pp_second_weight_4,float,unit = pounds
+451,pp_second_weight_5,float,unit = pounds
+452,pp_second_weight_6,float,unit = pounds
+453,pp_second_weight_7,float,unit = pounds
+454,pp_second_weight_8,float,unit = pounds
+455,pp_second_weight_9,float,unit = pounds
+456,pp_third_weight_0,float,unit = pounds
+457,pp_third_weight_1,float,unit = pounds
+458,pp_third_weight_2,float,unit = pounds
+459,pp_third_weight_3,float,unit = pounds
+460,pp_third_weight_4,float,unit = pounds
+461,pp_third_weight_5,float,unit = pounds
+462,pp_third_weight_6,float,unit = pounds
+463,pp_third_weight_7,float,unit = pounds
+464,pp_third_weight_8,float,unit = pounds
+465,pp_third_weight_9,float,unit = pounds
+466,pp_winner_margin_0,float,
+467,pp_winner_margin_1,float,
+468,pp_winner_margin_2,float,
+469,pp_winner_margin_3,float,
+470,pp_winner_margin_4,float,
+471,pp_winner_margin_5,float,
+472,pp_winner_margin_6,float,
+473,pp_winner_margin_7,float,
+474,pp_winner_margin_8,float,
+475,pp_winner_margin_9,float,
+476,pp_second_margin_0,float,
+477,pp_second_margin_1,float,
+478,pp_second_margin_2,float,
+479,pp_second_margin_3,float,
+480,pp_second_margin_4,float,
+481,pp_second_margin_5,float,
+482,pp_second_margin_6,float,
+483,pp_second_margin_7,float,
+484,pp_second_margin_8,float,
+485,pp_second_margin_9,float,
+486,pp_third_margin_0,float,
+487,pp_third_margin_1,float,
+488,pp_third_margin_2,float,
+489,pp_third_margin_3,float,
+490,pp_third_margin_4,float,
+491,pp_third_margin_5,float,
+492,pp_third_margin_6,float,
+493,pp_third_margin_7,float,
+494,pp_third_margin_8,float,
+495,pp_third_margin_9,float,
+496,pp_comment_extra_0,str,natural language
+497,pp_comment_extra_1,str,natural language
+498,pp_comment_extra_2,str,natural language
+499,pp_comment_extra_3,str,natural language
+500,pp_comment_extra_4,str,natural language
+501,pp_comment_extra_5,str,natural language
+502,pp_comment_extra_6,str,natural language
+503,pp_comment_extra_7,str,natural language
+504,pp_comment_extra_8,str,natural language
+505,pp_comment_extra_9,str,natural language
+506,pp_weight_0,float,unit = pounds
+507,pp_weight_1,float,unit = pounds
+508,pp_weight_2,float,unit = pounds
+509,pp_weight_3,float,unit = pounds
+510,pp_weight_4,float,unit = pounds
+511,pp_weight_5,float,unit = pounds
+512,pp_weight_6,float,unit = pounds
+513,pp_weight_7,float,unit = pounds
+514,pp_weight_8,float,unit = pounds
+515,pp_weight_9,float,unit = pounds
+516,pp_odds_0,float,
+517,pp_odds_1,float,
+518,pp_odds_2,float,
+519,pp_odds_3,float,
+520,pp_odds_4,float,
+521,pp_odds_5,float,
+522,pp_odds_6,float,
+523,pp_odds_7,float,
+524,pp_odds_8,float,
+525,pp_odds_9,float,
+526,pp_entry_0,type_pp_entry,check if exists
+527,pp_entry_1,type_pp_entry,check if exists
+528,pp_entry_2,type_pp_entry,check if exists
+529,pp_entry_3,type_pp_entry,check if exists
+530,pp_entry_4,type_pp_entry,check if exists
+531,pp_entry_5,type_pp_entry,check if exists
+532,pp_entry_6,type_pp_entry,check if exists
+533,pp_entry_7,type_pp_entry,check if exists
+534,pp_entry_8,type_pp_entry,check if exists
+535,pp_entry_9,type_pp_entry,check if exists
+536,pp_race_classification_0,str,check if exists
+537,pp_race_classification_1,str,check if exists
+538,pp_race_classification_2,str,check if exists
+539,pp_race_classification_3,str,check if exists
+540,pp_race_classification_4,str,check if exists
+541,pp_race_classification_5,str,check if exists
+542,pp_race_classification_6,str,check if exists
+543,pp_race_classification_7,str,check if exists
+544,pp_race_classification_8,str,check if exists
+545,pp_race_classification_9,str,check if exists
+546,pp_claiming_price_horse_0,float,unit = USD
+547,pp_claiming_price_horse_1,float,unit = USD
+548,pp_claiming_price_horse_2,float,unit = USD
+549,pp_claiming_price_horse_3,float,unit = USD
+550,pp_claiming_price_horse_4,float,unit = USD
+551,pp_claiming_price_horse_5,float,unit = USD
+552,pp_claiming_price_horse_6,float,unit = USD
+553,pp_claiming_price_horse_7,float,unit = USD
+554,pp_claiming_price_horse_8,float,unit = USD
+555,pp_claiming_price_horse_9,float,unit = USD
+556,pp_purse_0,float,unit = USD
+557,pp_purse_1,float,unit = USD
+558,pp_purse_2,float,unit = USD
+559,pp_purse_3,float,unit = USD
+560,pp_purse_4,float,unit = USD
+561,pp_purse_5,float,unit = USD
+562,pp_purse_6,float,unit = USD
+563,pp_purse_7,float,unit = USD
+564,pp_purse_8,float,unit = USD
+565,pp_purse_9,float,unit = USD
+566,pp_call_start_0,float,
+567,pp_call_start_1,float,
+568,pp_call_start_2,float,
+569,pp_call_start_3,float,
+570,pp_call_start_4,float,
+571,pp_call_start_5,float,
+572,pp_call_start_6,float,
+573,pp_call_start_7,float,
+574,pp_call_start_8,float,
+575,pp_call_start_9,float,
+576,pp_call_first_pos_0,float,
+577,pp_call_first_pos_1,float,
+578,pp_call_first_pos_2,float,
+579,pp_call_first_pos_3,float,
+580,pp_call_first_pos_4,float,
+581,pp_call_first_pos_5,float,
+582,pp_call_first_pos_6,float,
+583,pp_call_first_pos_7,float,
+584,pp_call_first_pos_8,float,
+585,pp_call_first_pos_9,float,
+586,pp_call_second_pos_0,float,
+587,pp_call_second_pos_1,float,
+588,pp_call_second_pos_2,float,
+589,pp_call_second_pos_3,float,
+590,pp_call_second_pos_4,float,
+591,pp_call_second_pos_5,float,
+592,pp_call_second_pos_6,float,
+593,pp_call_second_pos_7,float,
+594,pp_call_second_pos_8,float,
+595,pp_call_second_pos_9,float,
+596,pp_call_gate_pos_0,float,
+597,pp_call_gate_pos_1,float,
+598,pp_call_gate_pos_2,float,
+599,pp_call_gate_pos_3,float,
+600,pp_call_gate_pos_4,float,
+601,pp_call_gate_pos_5,float,
+602,pp_call_gate_pos_6,float,
+603,pp_call_gate_pos_7,float,
+604,pp_call_gate_pos_8,float,
+605,pp_call_gate_pos_9,float,
+606,pp_call_stretch_pos_0,float,
+607,pp_call_stretch_pos_1,float,
+608,pp_call_stretch_pos_2,float,
+609,pp_call_stretch_pos_3,float,
+610,pp_call_stretch_pos_4,float,
+611,pp_call_stretch_pos_5,float,
+612,pp_call_stretch_pos_6,float,
+613,pp_call_stretch_pos_7,float,
+614,pp_call_stretch_pos_8,float,
+615,pp_call_stretch_pos_9,float,
+616,pp_call_finish_pos_0,float,
+617,pp_call_finish_pos_1,float,
+618,pp_call_finish_pos_2,float,
+619,pp_call_finish_pos_3,float,
+620,pp_call_finish_pos_4,float,
+621,pp_call_finish_pos_5,float,
+622,pp_call_finish_pos_6,float,
+623,pp_call_finish_pos_7,float,
+624,pp_call_finish_pos_8,float,
+625,pp_call_finish_pos_9,float,
+626,pp_call_money_pos_0,float,
+627,pp_call_money_pos_1,float,
+628,pp_call_money_pos_2,float,
+629,pp_call_money_pos_3,float,
+630,pp_call_money_pos_4,float,
+631,pp_call_money_pos_5,float,
+632,pp_call_money_pos_6,float,
+633,pp_call_money_pos_7,float,
+634,pp_call_money_pos_8,float,
+635,pp_call_money_pos_9,float,
+636,pp_start_call_btnLengthsLdr_0,float,
+637,pp_start_call_btnLengthsLdr_1,float,
+638,pp_start_call_btnLengthsLdr_2,float,
+639,pp_start_call_btnLengthsLdr_3,float,
+640,pp_start_call_btnLengthsLdr_4,float,
+641,pp_start_call_btnLengthsLdr_5,float,
+642,pp_start_call_btnLengthsLdr_6,float,
+643,pp_start_call_btnLengthsLdr_7,float,
+644,pp_start_call_btnLengthsLdr_8,float,
+645,pp_start_call_btnLengthsLdr_9,float,
+646,pp_start_call_btnLengthsOnly_0,float,
+647,pp_start_call_btnLengthsOnly_1,float,
+648,pp_start_call_btnLengthsOnly_2,float,
+649,pp_start_call_btnLengthsOnly_3,float,
+650,pp_start_call_btnLengthsOnly_4,float,
+651,pp_start_call_btnLengthsOnly_5,float,
+652,pp_start_call_btnLengthsOnly_6,float,
+653,pp_start_call_btnLengthsOnly_7,float,
+654,pp_start_call_btnLengthsOnly_8,float,
+655,pp_start_call_btnLengthsOnly_9,float,
+656,pp_first_call_btnLengthsLdr_0,float,
+657,pp_first_call_btnLengthsLdr_1,float,
+658,pp_first_call_btnLengthsLdr_2,float,
+659,pp_first_call_btnLengthsLdr_3,float,
+660,pp_first_call_btnLengthsLdr_4,float,
+661,pp_first_call_btnLengthsLdr_5,float,
+662,pp_first_call_btnLengthsLdr_6,float,
+663,pp_first_call_btnLengthsLdr_7,float,
+664,pp_first_call_btnLengthsLdr_8,float,
+665,pp_first_call_btnLengthsLdr_9,float,
+666,pp_first_call_btnLengthsOnly_0,float,
+667,pp_first_call_btnLengthsOnly_1,float,
+668,pp_first_call_btnLengthsOnly_2,float,
+669,pp_first_call_btnLengthsOnly_3,float,
+670,pp_first_call_btnLengthsOnly_4,float,
+671,pp_first_call_btnLengthsOnly_5,float,
+672,pp_first_call_btnLengthsOnly_6,float,
+673,pp_first_call_btnLengthsOnly_7,float,
+674,pp_first_call_btnLengthsOnly_8,float,
+675,pp_first_call_btnLengthsOnly_9,float,
+676,pp_second_call_btnLengthsLdr_0,float,
+677,pp_second_call_btnLengthsLdr_1,float,
+678,pp_second_call_btnLengthsLdr_2,float,
+679,pp_second_call_btnLengthsLdr_3,float,
+680,pp_second_call_btnLengthsLdr_4,float,
+681,pp_second_call_btnLengthsLdr_5,float,
+682,pp_second_call_btnLengthsLdr_6,float,
+683,pp_second_call_btnLengthsLdr_7,float,
+684,pp_second_call_btnLengthsLdr_8,float,
+685,pp_second_call_btnLengthsLdr_9,float,
+686,pp_second_call_btnLengthsOnly_0,float,
+687,pp_second_call_btnLengthsOnly_1,float,
+688,pp_second_call_btnLengthsOnly_2,float,
+689,pp_second_call_btnLengthsOnly_3,float,
+690,pp_second_call_btnLengthsOnly_4,float,
+691,pp_second_call_btnLengthsOnly_5,float,
+692,pp_second_call_btnLengthsOnly_6,float,
+693,pp_second_call_btnLengthsOnly_7,float,
+694,pp_second_call_btnLengthsOnly_8,float,
+695,pp_second_call_btnLengthsOnly_9,float,
+696,pp_race_shape_first_0,float,flag
+697,pp_race_shape_first_1,float,flag
+698,pp_race_shape_first_2,float,flag
+699,pp_race_shape_first_3,float,flag
+700,pp_race_shape_first_4,float,flag
+701,pp_race_shape_first_5,float,flag
+702,pp_race_shape_first_6,float,flag
+703,pp_race_shape_first_7,float,flag
+704,pp_race_shape_first_8,float,flag
+705,pp_race_shape_first_9,float,flag
+706,pp_reserved_706_0,str,flag
+707,pp_reserved_706_1,str,flag
+708,pp_reserved_706_2,str,flag
+709,pp_reserved_706_3,str,flag
+710,pp_reserved_706_4,str,flag
+711,pp_reserved_706_5,str,flag
+712,pp_reserved_706_6,str,flag
+713,pp_reserved_706_7,str,flag
+714,pp_reserved_706_8,str,flag
+715,pp_reserved_706_9,str,flag
+716,pp_stretch_call_btnLengthsLdr_0,float,
+717,pp_stretch_call_btnLengthsLdr_1,float,
+718,pp_stretch_call_btnLengthsLdr_2,float,
+719,pp_stretch_call_btnLengthsLdr_3,float,
+720,pp_stretch_call_btnLengthsLdr_4,float,
+721,pp_stretch_call_btnLengthsLdr_5,float,
+722,pp_stretch_call_btnLengthsLdr_6,float,
+723,pp_stretch_call_btnLengthsLdr_7,float,
+724,pp_stretch_call_btnLengthsLdr_8,float,
+725,pp_stretch_call_btnLengthsLdr_9,float,
+726,pp_stretch_call_btnLengthsOnly_0,float,
+727,pp_stretch_call_btnLengthsOnly_1,float,
+728,pp_stretch_call_btnLengthsOnly_2,float,
+729,pp_stretch_call_btnLengthsOnly_3,float,
+730,pp_stretch_call_btnLengthsOnly_4,float,
+731,pp_stretch_call_btnLengthsOnly_5,float,
+732,pp_stretch_call_btnLengthsOnly_6,float,
+733,pp_stretch_call_btnLengthsOnly_7,float,
+734,pp_stretch_call_btnLengthsOnly_8,float,
+735,pp_stretch_call_btnLengthsOnly_9,float,
+736,pp_finish_call_btnLengthsLdr_0,float,
+737,pp_finish_call_btnLengthsLdr_1,float,
+738,pp_finish_call_btnLengthsLdr_2,float,
+739,pp_finish_call_btnLengthsLdr_3,float,
+740,pp_finish_call_btnLengthsLdr_4,float,
+741,pp_finish_call_btnLengthsLdr_5,float,
+742,pp_finish_call_btnLengthsLdr_6,float,
+743,pp_finish_call_btnLengthsLdr_7,float,
+744,pp_finish_call_btnLengthsLdr_8,float,
+745,pp_finish_call_btnLengthsLdr_9,float,
+746,pp_finish_call_btnLengthsOnly_0,float,
+747,pp_finish_call_btnLengthsOnly_1,float,
+748,pp_finish_call_btnLengthsOnly_2,float,
+749,pp_finish_call_btnLengthsOnly_3,float,
+750,pp_finish_call_btnLengthsOnly_4,float,
+751,pp_finish_call_btnLengthsOnly_5,float,
+752,pp_finish_call_btnLengthsOnly_6,float,
+753,pp_finish_call_btnLengthsOnly_7,float,
+754,pp_finish_call_btnLengthsOnly_8,float,
+755,pp_finish_call_btnLengthsOnly_9,float,
+756,pp_race_shape_second_0,float,flag
+757,pp_race_shape_second_1,float,flag
+758,pp_race_shape_second_2,float,flag
+759,pp_race_shape_second_3,float,flag
+760,pp_race_shape_second_4,float,flag
+761,pp_race_shape_second_5,float,flag
+762,pp_race_shape_second_6,float,flag
+763,pp_race_shape_second_7,float,flag
+764,pp_race_shape_second_8,float,flag
+765,pp_race_shape_second_9,float,flag
+766,pp_pace_2f_0,float,
+767,pp_pace_2f_1,float,
+768,pp_pace_2f_2,float,
+769,pp_pace_2f_3,float,
+770,pp_pace_2f_4,float,
+771,pp_pace_2f_5,float,
+772,pp_pace_2f_6,float,
+773,pp_pace_2f_7,float,
+774,pp_pace_2f_8,float,
+775,pp_pace_2f_9,float,
+776,pp_pace_4f_0,float,
+777,pp_pace_4f_1,float,
+778,pp_pace_4f_2,float,
+779,pp_pace_4f_3,float,
+780,pp_pace_4f_4,float,
+781,pp_pace_4f_5,float,
+782,pp_pace_4f_6,float,
+783,pp_pace_4f_7,float,
+784,pp_pace_4f_8,float,
+785,pp_pace_4f_9,float,
+786,pp_pace_6f_0,float,
+787,pp_pace_6f_1,float,
+788,pp_pace_6f_2,float,
+789,pp_pace_6f_3,float,
+790,pp_pace_6f_4,float,
+791,pp_pace_6f_5,float,
+792,pp_pace_6f_6,float,
+793,pp_pace_6f_7,float,
+794,pp_pace_6f_8,float,
+795,pp_pace_6f_9,float,
+796,pp_pace_8f_0,float,
+797,pp_pace_8f_1,float,
+798,pp_pace_8f_2,float,
+799,pp_pace_8f_3,float,
+800,pp_pace_8f_4,float,
+801,pp_pace_8f_5,float,
+802,pp_pace_8f_6,float,
+803,pp_pace_8f_7,float,
+804,pp_pace_8f_8,float,
+805,pp_pace_8f_9,float,
+806,pp_pace_10f_0,float,
+807,pp_pace_10f_1,float,
+808,pp_pace_10f_2,float,
+809,pp_pace_10f_3,float,
+810,pp_pace_10f_4,float,
+811,pp_pace_10f_5,float,
+812,pp_pace_10f_6,float,
+813,pp_pace_10f_7,float,
+814,pp_pace_10f_8,float,
+815,pp_pace_10f_9,float,
+816,pp_pace_Late_0,float,
+817,pp_pace_Late_1,float,
+818,pp_pace_Late_2,float,
+819,pp_pace_Late_3,float,
+820,pp_pace_Late_4,float,
+821,pp_pace_Late_5,float,
+822,pp_pace_Late_6,float,
+823,pp_pace_Late_7,float,
+824,pp_pace_Late_8,float,
+825,pp_pace_Late_9,float,
+826,pp_race_rating_0,float,
+827,pp_race_rating_1,float,
+828,pp_race_rating_2,float,
+829,pp_race_rating_3,float,
+830,pp_race_rating_4,float,
+831,pp_race_rating_5,float,
+832,pp_race_rating_6,float,
+833,pp_race_rating_7,float,
+834,pp_race_rating_8,float,
+835,pp_race_rating_9,float,
+836,pp_race_pace_0,float,
+837,pp_race_pace_1,float,
+838,pp_race_pace_2,float,
+839,pp_race_pace_3,float,
+840,pp_race_pace_4,float,
+841,pp_race_pace_5,float,
+842,pp_race_pace_6,float,
+843,pp_race_pace_7,float,
+844,pp_race_pace_8,float,
+845,pp_race_pace_9,float,
+846,pp_speed_HDW_0,float,
+847,pp_speed_HDW_1,float,
+848,pp_speed_HDW_2,float,
+849,pp_speed_HDW_3,float,
+850,pp_speed_HDW_4,float,
+851,pp_speed_HDW_5,float,
+852,pp_speed_HDW_6,float,
+853,pp_speed_HDW_7,float,
+854,pp_speed_HDW_8,float,
+855,pp_speed_HDW_9,float,
+856,pp_speed_DRF_0,float,
+857,pp_speed_DRF_1,float,
+858,pp_speed_DRF_2,float,
+859,pp_speed_DRF_3,float,
+860,pp_speed_DRF_4,float,
+861,pp_speed_DRF_5,float,
+862,pp_speed_DRF_6,float,
+863,pp_speed_DRF_7,float,
+864,pp_speed_DRF_8,float,
+865,pp_speed_DRF_9,float,
+866,pp_trackvariant_DRF_0,float,
+867,pp_trackvariant_DRF_1,float,
+868,pp_trackvariant_DRF_2,float,
+869,pp_trackvariant_DRF_3,float,
+870,pp_trackvariant_DRF_4,float,
+871,pp_trackvariant_DRF_5,float,
+872,pp_trackvariant_DRF_6,float,
+873,pp_trackvariant_DRF_7,float,
+874,pp_trackvariant_DRF_8,float,
+875,pp_trackvariant_DRF_9,float,
+876,pp_fraction_2f_0,datetime.time_interval,unit = seconds
+877,pp_fraction_2f_1,datetime.time_interval,unit = seconds
+878,pp_fraction_2f_2,datetime.time_interval,unit = seconds
+879,pp_fraction_2f_3,datetime.time_interval,unit = seconds
+880,pp_fraction_2f_4,datetime.time_interval,unit = seconds
+881,pp_fraction_2f_5,datetime.time_interval,unit = seconds
+882,pp_fraction_2f_6,datetime.time_interval,unit = seconds
+883,pp_fraction_2f_7,datetime.time_interval,unit = seconds
+884,pp_fraction_2f_8,datetime.time_interval,unit = seconds
+885,pp_fraction_2f_9,datetime.time_interval,unit = seconds
+886,pp_fraction_3f_0,datetime.time_interval,unit = seconds
+887,pp_fraction_3f_1,datetime.time_interval,unit = seconds
+888,pp_fraction_3f_2,datetime.time_interval,unit = seconds
+889,pp_fraction_3f_3,datetime.time_interval,unit = seconds
+890,pp_fraction_3f_4,datetime.time_interval,unit = seconds
+891,pp_fraction_3f_5,datetime.time_interval,unit = seconds
+892,pp_fraction_3f_6,datetime.time_interval,unit = seconds
+893,pp_fraction_3f_7,datetime.time_interval,unit = seconds
+894,pp_fraction_3f_8,datetime.time_interval,unit = seconds
+895,pp_fraction_3f_9,datetime.time_interval,unit = seconds
+896,pp_fraction_4f_0,datetime.time_interval,unit = seconds
+897,pp_fraction_4f_1,datetime.time_interval,unit = seconds
+898,pp_fraction_4f_2,datetime.time_interval,unit = seconds
+899,pp_fraction_4f_3,datetime.time_interval,unit = seconds
+900,pp_fraction_4f_4,datetime.time_interval,unit = seconds
+901,pp_fraction_4f_5,datetime.time_interval,unit = seconds
+902,pp_fraction_4f_6,datetime.time_interval,unit = seconds
+903,pp_fraction_4f_7,datetime.time_interval,unit = seconds
+904,pp_fraction_4f_8,datetime.time_interval,unit = seconds
+905,pp_fraction_4f_9,datetime.time_interval,unit = seconds
+906,pp_fraction_5f_0,datetime.time_interval,unit = seconds
+907,pp_fraction_5f_1,datetime.time_interval,unit = seconds
+908,pp_fraction_5f_2,datetime.time_interval,unit = seconds
+909,pp_fraction_5f_3,datetime.time_interval,unit = seconds
+910,pp_fraction_5f_4,datetime.time_interval,unit = seconds
+911,pp_fraction_5f_5,datetime.time_interval,unit = seconds
+912,pp_fraction_5f_6,datetime.time_interval,unit = seconds
+913,pp_fraction_5f_7,datetime.time_interval,unit = seconds
+914,pp_fraction_5f_8,datetime.time_interval,unit = seconds
+915,pp_fraction_5f_9,datetime.time_interval,unit = seconds
+916,pp_fraction_6f_0,datetime.time_interval,unit = seconds
+917,pp_fraction_6f_1,datetime.time_interval,unit = seconds
+918,pp_fraction_6f_2,datetime.time_interval,unit = seconds
+919,pp_fraction_6f_3,datetime.time_interval,unit = seconds
+920,pp_fraction_6f_4,datetime.time_interval,unit = seconds
+921,pp_fraction_6f_5,datetime.time_interval,unit = seconds
+922,pp_fraction_6f_6,datetime.time_interval,unit = seconds
+923,pp_fraction_6f_7,datetime.time_interval,unit = seconds
+924,pp_fraction_6f_8,datetime.time_interval,unit = seconds
+925,pp_fraction_6f_9,datetime.time_interval,unit = seconds
+926,pp_fraction_7f_0,datetime.time_interval,unit = seconds
+927,pp_fraction_7f_1,datetime.time_interval,unit = seconds
+928,pp_fraction_7f_2,datetime.time_interval,unit = seconds
+929,pp_fraction_7f_3,datetime.time_interval,unit = seconds
+930,pp_fraction_7f_4,datetime.time_interval,unit = seconds
+931,pp_fraction_7f_5,datetime.time_interval,unit = seconds
+932,pp_fraction_7f_6,datetime.time_interval,unit = seconds
+933,pp_fraction_7f_7,datetime.time_interval,unit = seconds
+934,pp_fraction_7f_8,datetime.time_interval,unit = seconds
+935,pp_fraction_7f_9,datetime.time_interval,unit = seconds
+936,pp_fraction_8f_0,datetime.time_interval,unit = seconds
+937,pp_fraction_8f_1,datetime.time_interval,unit = seconds
+938,pp_fraction_8f_2,datetime.time_interval,unit = seconds
+939,pp_fraction_8f_3,datetime.time_interval,unit = seconds
+940,pp_fraction_8f_4,datetime.time_interval,unit = seconds
+941,pp_fraction_8f_5,datetime.time_interval,unit = seconds
+942,pp_fraction_8f_6,datetime.time_interval,unit = seconds
+943,pp_fraction_8f_7,datetime.time_interval,unit = seconds
+944,pp_fraction_8f_8,datetime.time_interval,unit = seconds
+945,pp_fraction_8f_9,datetime.time_interval,unit = seconds
+946,pp_fraction_10f_0,datetime.time_interval,unit = seconds
+947,pp_fraction_10f_1,datetime.time_interval,unit = seconds
+948,pp_fraction_10f_2,datetime.time_interval,unit = seconds
+949,pp_fraction_10f_3,datetime.time_interval,unit = seconds
+950,pp_fraction_10f_4,datetime.time_interval,unit = seconds
+951,pp_fraction_10f_5,datetime.time_interval,unit = seconds
+952,pp_fraction_10f_6,datetime.time_interval,unit = seconds
+953,pp_fraction_10f_7,datetime.time_interval,unit = seconds
+954,pp_fraction_10f_8,datetime.time_interval,unit = seconds
+955,pp_fraction_10f_9,datetime.time_interval,unit = seconds
+956,pp_fraction_12f_0,datetime.time_interval,unit = seconds
+957,pp_fraction_12f_1,datetime.time_interval,unit = seconds
+958,pp_fraction_12f_2,datetime.time_interval,unit = seconds
+959,pp_fraction_12f_3,datetime.time_interval,unit = seconds
+960,pp_fraction_12f_4,datetime.time_interval,unit = seconds
+961,pp_fraction_12f_5,datetime.time_interval,unit = seconds
+962,pp_fraction_12f_6,datetime.time_interval,unit = seconds
+963,pp_fraction_12f_7,datetime.time_interval,unit = seconds
+964,pp_fraction_12f_8,datetime.time_interval,unit = seconds
+965,pp_fraction_12f_9,datetime.time_interval,unit = seconds
+966,pp_fraction_14f_0,datetime.time_interval,unit = seconds
+967,pp_fraction_14f_1,datetime.time_interval,unit = seconds
+968,pp_fraction_14f_2,datetime.time_interval,unit = seconds
+969,pp_fraction_14f_3,datetime.time_interval,unit = seconds
+970,pp_fraction_14f_4,datetime.time_interval,unit = seconds
+971,pp_fraction_14f_5,datetime.time_interval,unit = seconds
+972,pp_fraction_14f_6,datetime.time_interval,unit = seconds
+973,pp_fraction_14f_7,datetime.time_interval,unit = seconds
+974,pp_fraction_14f_8,datetime.time_interval,unit = seconds
+975,pp_fraction_14f_9,datetime.time_interval,unit = seconds
+976,pp_fraction_16f_0,datetime.time_interval,unit = seconds
+977,pp_fraction_16f_1,datetime.time_interval,unit = seconds
+978,pp_fraction_16f_2,datetime.time_interval,unit = seconds
+979,pp_fraction_16f_3,datetime.time_interval,unit = seconds
+980,pp_fraction_16f_4,datetime.time_interval,unit = seconds
+981,pp_fraction_16f_5,datetime.time_interval,unit = seconds
+982,pp_fraction_16f_6,datetime.time_interval,unit = seconds
+983,pp_fraction_16f_7,datetime.time_interval,unit = seconds
+984,pp_fraction_16f_8,datetime.time_interval,unit = seconds
+985,pp_fraction_16f_9,datetime.time_interval,unit = seconds
+986,pp_fracsetting1_0,type_user_setting,Fractions:
+987,pp_fracsetting1_1,type_user_setting,Fractions:
+988,pp_fracsetting1_2,type_user_setting,Fractions:
+989,pp_fracsetting1_3,type_user_setting,Fractions:
+990,pp_fracsetting1_4,type_user_setting,Fractions:
+991,pp_fracsetting1_5,type_user_setting,Fractions:
+992,pp_fracsetting1_6,type_user_setting,Fractions:
+993,pp_fracsetting1_7,type_user_setting,Fractions:
+994,pp_fracsetting1_8,type_user_setting,Fractions:
+995,pp_fracsetting1_9,type_user_setting,Fractions:
+996,pp_fracsetting2_0,type_user_setting,Fractions:
+997,pp_fracsetting2_1,type_user_setting,Fractions:
+998,pp_fracsetting2_2,type_user_setting,Fractions:
+999,pp_fracsetting2_3,type_user_setting,Fractions:
+1000,pp_fracsetting2_4,type_user_setting,Fractions:
+1001,pp_fracsetting2_5,type_user_setting,Fractions:
+1002,pp_fracsetting2_6,type_user_setting,Fractions:
+1003,pp_fracsetting2_7,type_user_setting,Fractions:
+1004,pp_fracsetting2_8,type_user_setting,Fractions:
+1005,pp_fracsetting2_9,type_user_setting,Fractions:
+1006,pp_fracsetting3_0,type_user_setting,Fractions:
+1007,pp_fracsetting3_1,type_user_setting,Fractions:
+1008,pp_fracsetting3_2,type_user_setting,Fractions:
+1009,pp_fracsetting3_3,type_user_setting,Fractions:
+1010,pp_fracsetting3_4,type_user_setting,Fractions:
+1011,pp_fracsetting3_5,type_user_setting,Fractions:
+1012,pp_fracsetting3_6,type_user_setting,Fractions:
+1013,pp_fracsetting3_7,type_user_setting,Fractions:
+1014,pp_fracsetting3_8,type_user_setting,Fractions:
+1015,pp_fracsetting3_9,type_user_setting,Fractions:
+1016,pp_runup_dist_0,float,unit = yards
+1017,pp_runup_dist_1,float,unit = yards
+1018,pp_runup_dist_2,float,unit = yards
+1019,pp_runup_dist_3,float,unit = yards
+1020,pp_runup_dist_4,float,unit = yards
+1021,pp_runup_dist_5,float,unit = yards
+1022,pp_runup_dist_6,float,unit = yards
+1023,pp_runup_dist_7,float,unit = yards
+1024,pp_runup_dist_8,float,unit = yards
+1025,pp_runup_dist_9,float,unit = yards
+1026,pp_HDWRunstyle_0,type_pp_HDWRunstyle,
+1027,pp_HDWRunstyle_1,type_pp_HDWRunstyle,
+1028,pp_HDWRunstyle_2,type_pp_HDWRunstyle,
+1029,pp_HDWRunstyle_3,type_pp_HDWRunstyle,
+1030,pp_HDWRunstyle_4,type_pp_HDWRunstyle,
+1031,pp_HDWRunstyle_5,type_pp_HDWRunstyle,
+1032,pp_HDWRunstyle_6,type_pp_HDWRunstyle,
+1033,pp_HDWRunstyle_7,type_pp_HDWRunstyle,
+1034,pp_HDWRunstyle_8,type_pp_HDWRunstyle,
+1035,pp_HDWRunstyle_9,type_pp_HDWRunstyle,
+1036,pp_fraction_finaltime_0,datetime.time_interval,
+1037,pp_fraction_finaltime_1,datetime.time_interval,
+1038,pp_fraction_finaltime_2,datetime.time_interval,
+1039,pp_fraction_finaltime_3,datetime.time_interval,
+1040,pp_fraction_finaltime_4,datetime.time_interval,
+1041,pp_fraction_finaltime_5,datetime.time_interval,
+1042,pp_fraction_finaltime_6,datetime.time_interval,
+1043,pp_fraction_finaltime_7,datetime.time_interval,
+1044,pp_fraction_finaltime_8,datetime.time_interval,
+1045,pp_fraction_finaltime_9,datetime.time_interval,
+1046,pp_claimed_0,type_pp_claimed,
+1047,pp_claimed_1,type_pp_claimed,
+1048,pp_claimed_2,type_pp_claimed,
+1049,pp_claimed_3,type_pp_claimed,
+1050,pp_claimed_4,type_pp_claimed,
+1051,pp_claimed_5,type_pp_claimed,
+1052,pp_claimed_6,type_pp_claimed,
+1053,pp_claimed_7,type_pp_claimed,
+1054,pp_claimed_8,type_pp_claimed,
+1055,pp_claimed_9,type_pp_claimed,
+1056,pp_trainer_0,str,check if exists
+1057,pp_trainer_1,str,check if exists
+1058,pp_trainer_2,str,check if exists
+1059,pp_trainer_3,str,check if exists
+1060,pp_trainer_4,str,check if exists
+1061,pp_trainer_5,str,check if exists
+1062,pp_trainer_6,str,check if exists
+1063,pp_trainer_7,str,check if exists
+1064,pp_trainer_8,str,check if exists
+1065,pp_trainer_9,str,check if exists
+1066,pp_jockey_0,str,check if exists
+1067,pp_jockey_1,str,check if exists
+1068,pp_jockey_2,str,check if exists
+1069,pp_jockey_3,str,check if exists
+1070,pp_jockey_4,str,check if exists
+1071,pp_jockey_5,str,check if exists
+1072,pp_jockey_6,str,check if exists
+1073,pp_jockey_7,str,check if exists
+1074,pp_jockey_8,str,check if exists
+1075,pp_jockey_9,str,check if exists
+1076,pp_apprentice_wt_0,float,
+1077,pp_apprentice_wt_1,float,
+1078,pp_apprentice_wt_2,float,
+1079,pp_apprentice_wt_3,float,
+1080,pp_apprentice_wt_4,float,
+1081,pp_apprentice_wt_5,float,
+1082,pp_apprentice_wt_6,float,
+1083,pp_apprentice_wt_7,float,
+1084,pp_apprentice_wt_8,float,
+1085,pp_apprentice_wt_9,float,
+1086,pp_raceType_0,type_pp_raceType,check if exists
+1087,pp_raceType_1,type_pp_raceType,check if exists
+1088,pp_raceType_2,type_pp_raceType,check if exists
+1089,pp_raceType_3,type_pp_raceType,check if exists
+1090,pp_raceType_4,type_pp_raceType,check if exists
+1091,pp_raceType_5,type_pp_raceType,check if exists
+1092,pp_raceType_6,type_pp_raceType,check if exists
+1093,pp_raceType_7,type_pp_raceType,check if exists
+1094,pp_raceType_8,type_pp_raceType,check if exists
+1095,pp_raceType_9,type_pp_raceType,check if exists
+1096,pp_ageSexRestriction_0,type_pp_ageSexRestriction,check if exists
+1097,pp_ageSexRestriction_1,type_pp_ageSexRestriction,check if exists
+1098,pp_ageSexRestriction_2,type_pp_ageSexRestriction,check if exists
+1099,pp_ageSexRestriction_3,type_pp_ageSexRestriction,check if exists
+1100,pp_ageSexRestriction_4,type_pp_ageSexRestriction,check if exists
+1101,pp_ageSexRestriction_5,type_pp_ageSexRestriction,check if exists
+1102,pp_ageSexRestriction_6,type_pp_ageSexRestriction,check if exists
+1103,pp_ageSexRestriction_7,type_pp_ageSexRestriction,check if exists
+1104,pp_ageSexRestriction_8,type_pp_ageSexRestriction,check if exists
+1105,pp_ageSexRestriction_9,type_pp_ageSexRestriction,check if exists
+1106,pp_statebred_0,type_pp_statebred,
+1107,pp_statebred_1,type_pp_statebred,
+1108,pp_statebred_2,type_pp_statebred,
+1109,pp_statebred_3,type_pp_statebred,
+1110,pp_statebred_4,type_pp_statebred,
+1111,pp_statebred_5,type_pp_statebred,
+1112,pp_statebred_6,type_pp_statebred,
+1113,pp_statebred_7,type_pp_statebred,
+1114,pp_statebred_8,type_pp_statebred,
+1115,pp_statebred_9,type_pp_statebred,
+1116,pp_restrictedQualifier_0,type_pp_restrictedQualifier,
+1117,pp_restrictedQualifier_1,type_pp_restrictedQualifier,
+1118,pp_restrictedQualifier_2,type_pp_restrictedQualifier,
+1119,pp_restrictedQualifier_3,type_pp_restrictedQualifier,
+1120,pp_restrictedQualifier_4,type_pp_restrictedQualifier,
+1121,pp_restrictedQualifier_5,type_pp_restrictedQualifier,
+1122,pp_restrictedQualifier_6,type_pp_restrictedQualifier,
+1123,pp_restrictedQualifier_7,type_pp_restrictedQualifier,
+1124,pp_restrictedQualifier_8,type_pp_restrictedQualifier,
+1125,pp_restrictedQualifier_9,type_pp_restrictedQualifier,
+1126,pp_favorite_0,bool,1 = favorite
+1127,pp_favorite_1,bool,1 = favorite
+1128,pp_favorite_2,bool,1 = favorite
+1129,pp_favorite_3,bool,1 = favorite
+1130,pp_favorite_4,bool,1 = favorite
+1131,pp_favorite_5,bool,1 = favorite
+1132,pp_favorite_6,bool,1 = favorite
+1133,pp_favorite_7,bool,1 = favorite
+1134,pp_favorite_8,bool,1 = favorite
+1135,pp_favorite_9,bool,1 = favorite
+1136,pp_frontBandages_0,bool,1 = front wrap
+1137,pp_frontBandages_1,bool,1 = front wrap
+1138,pp_frontBandages_2,bool,1 = front wrap
+1139,pp_frontBandages_3,bool,1 = front wrap
+1140,pp_frontBandages_4,bool,1 = front wrap
+1141,pp_frontBandages_5,bool,1 = front wrap
+1142,pp_frontBandages_6,bool,1 = front wrap
+1143,pp_frontBandages_7,bool,1 = front wrap
+1144,pp_frontBandages_8,bool,1 = front wrap
+1145,pp_frontBandages_9,bool,1 = front wrap
+1146,runner_trainerstats_0,,flag
+1147,runner_trainerstats_1,,flag
+1148,runner_trainerstats_2,,flag
+1149,runner_trainerstats_3,,flag
+1150,runner_trainerstats_4,,flag
+1151,runner_trainerstats_5,,flag
+1152,runner_trainerstats_6,,flag
+1153,runner_trainerstats_7,,flag
+1154,runner_trainerstats_8,,flag
+1155,runner_trainerstats_9,,flag
+1156,runner_trainerstats_10,,flag
+1157,runner_trainerstats_11,,flag
+1158,runner_jockeystats_0,,flag
+1159,runner_jockeystats_1,,flag
+1160,runner_jockeystats_2,,flag
+1161,runner_jockeystats_3,,flag
+1162,runner_jockeystats_4,,flag
+1163,runner_jockeystats_5,,flag
+1164,runner_jockeystats_6,,flag
+1165,runner_jockeystats_7,,flag
+1166,runner_jockeystats_8,,flag
+1167,pp_par_HDWSpeed_0,float,
+1168,pp_par_HDWSpeed_1,float,
+1169,pp_par_HDWSpeed_2,float,
+1170,pp_par_HDWSpeed_3,float,
+1171,pp_par_HDWSpeed_4,float,
+1172,pp_par_HDWSpeed_5,float,
+1173,pp_par_HDWSpeed_6,float,
+1174,pp_par_HDWSpeed_7,float,
+1175,pp_par_HDWSpeed_8,float,
+1176,pp_par_HDWSpeed_9,float,
+1177,runner_sire_studfee,float,
+1178,runner_speed_HDWBest_fastTrack,float,
+1179,runner_speed_HDWBest_turf,float,
+1180,runner_speed_HDWBest_Offtrack,float,
+1181,runner_speed_HDWBest_distance,float,
+1182,pp_bar_shoe_0,type_pp_bar_shoe,
+1183,pp_bar_shoe_1,type_pp_bar_shoe,
+1184,pp_bar_shoe_2,type_pp_bar_shoe,
+1185,pp_bar_shoe_3,type_pp_bar_shoe,
+1186,pp_bar_shoe_4,type_pp_bar_shoe,
+1187,pp_bar_shoe_5,type_pp_bar_shoe,
+1188,pp_bar_shoe_6,type_pp_bar_shoe,
+1189,pp_bar_shoe_7,type_pp_bar_shoe,
+1190,pp_bar_shoe_8,type_pp_bar_shoe,
+1191,pp_bar_shoe_9,type_pp_bar_shoe,
+1192,pp_company_0,str,
+1193,pp_company_1,str,
+1194,pp_company_2,str,
+1195,pp_company_3,str,
+1196,pp_company_4,str,
+1197,pp_company_5,str,
+1198,pp_company_6,str,
+1199,pp_company_7,str,
+1200,pp_company_8,str,
+1201,pp_company_9,str,
+1202,pp_claimingprice_low_0,float,
+1203,pp_claimingprice_low_1,float,
+1204,pp_claimingprice_low_2,float,
+1205,pp_claimingprice_low_3,float,
+1206,pp_claimingprice_low_4,float,
+1207,pp_claimingprice_low_5,float,
+1208,pp_claimingprice_low_6,float,
+1209,pp_claimingprice_low_7,float,
+1210,pp_claimingprice_low_8,float,
+1211,pp_claimingprice_low_9,float,
+1212,pp_claimingprice_high_0,float,
+1213,pp_claimingprice_high_1,float,
+1214,pp_claimingprice_high_2,float,
+1215,pp_claimingprice_high_3,float,
+1216,pp_claimingprice_high_4,float,
+1217,pp_claimingprice_high_5,float,
+1218,pp_claimingprice_high_6,float,
+1219,pp_claimingprice_high_7,float,
+1220,pp_claimingprice_high_8,float,
+1221,pp_claimingprice_high_9,float,
+1222,runner_auction_price,float,
+1223,runner_auction_location,str,
+1224,race_reserved_1224,str,flag
+1225,race_reserved_1225,str,flag
+1226,race_reserved_1226,str,flag
+1227,race_reserved_1227,str,flag
+1228,race_reserved_1228,str,flag
+1229,race_reserved_1229,str,flag
+1230,race_reserved_1230,str,flag
+1231,race_reserved_1231,str,flag
+1232,race_reserved_1232,str,flag
+1233,race_reserved_1233,str,flag
+1234,race_reserved_1234,str,flag
+1235,race_reserved_1235,str,flag
+1236,race_reserved_1236,str,flag
+1237,race_reserved_1237,str,flag
+1238,race_reserved_1238,str,flag
+1239,race_reserved_1239,str,flag
+1240,race_reserved_1240,str,flag
+1241,race_reserved_1241,str,flag
+1242,race_reserved_1242,str,flag
+1243,race_reserved_1243,str,flag
+1244,race_reserved_1244,str,flag
+1245,race_reserved_1245,str,flag
+1246,race_reserved_1246,str,flag
+1247,race_reserved_1247,str,flag
+1248,race_reserved_1248,str,flag
+1249,race_reserved_1249,str,flag
+1250,race_reserved_1250,str,flag
+1251,race_reserved_1251,str,flag
+1252,race_reserved_1252,str,flag
+1253,race_reserved_1253,str,flag
+1254,pp_code_start_0,type_pp_code_start,
+1255,pp_code_start_1,type_pp_code_start,
+1256,pp_code_start_2,type_pp_code_start,
+1257,pp_code_start_3,type_pp_code_start,
+1258,pp_code_start_4,type_pp_code_start,
+1259,pp_code_start_5,type_pp_code_start,
+1260,pp_code_start_6,type_pp_code_start,
+1261,pp_code_start_7,type_pp_code_start,
+1262,pp_code_start_8,type_pp_code_start,
+1263,pp_code_start_9,type_pp_code_start,
+1264,runner_pedigree_HDWDirt,float,
+1265,runner_pedigree_HDWMud,float,
+1266,runner_pedigree_HDWTurf,float,
+1267,runner_pedigree_HDWDist,float,
+1268,race_reserved_1268,str,flag
+1269,race_reserved_1269,str,flag
+1270,race_reserved_1270,str,flag
+1271,race_reserved_1271,str,flag
+1272,race_reserved_1272,str,flag
+1273,race_reserved_1273,str,flag
+1274,race_reserved_1274,str,flag
+1275,race_reserved_1275,str,flag
+1276,race_reserved_1276,str,flag
+1277,race_reserved_1277,str,flag
+1278,race_reserved_1278,str,flag
+1279,race_reserved_1279,str,flag
+1280,race_reserved_1280,str,flag
+1281,race_reserved_1281,str,flag
+1282,race_reserved_1282,str,flag
+1283,race_reserved_1283,str,flag
+1284,race_reserved_1284,str,flag
+1285,race_reserved_1285,str,flag
+1286,race_reserved_1286,str,flag
+1287,race_reserved_1287,str,flag
+1288,race_reserved_1288,str,flag
+1289,race_reserved_1289,str,flag
+1290,race_reserved_1290,str,flag
+1291,race_reserved_1291,str,flag
+1292,race_reserved_1292,str,flag
+1293,race_reserved_1293,str,flag
+1294,race_reserved_1294,str,flag
+1295,race_reserved_1295,str,flag
+1296,race_reserved_1296,str,flag
+1297,race_reserved_1297,str,flag
+1298,race_reserved_1298,str,flag
+1299,race_reserved_1299,str,flag
+1300,race_reserved_1300,str,flag
+1301,race_reserved_1301,str,flag
+1302,race_reserved_1302,str,flag
+1303,race_reserved_1303,str,flag
+1304,race_reserved_1304,str,flag
+1305,race_reserved_1305,str,flag
+1306,race_reserved_1306,str,flag
+1307,race_reserved_1307,str,flag
+1308,race_reserved_1308,str,flag
+1309,race_reserved_1309,str,flag
+1310,race_reserved_1310,str,flag
+1311,race_reserved_1311,str,flag
+1312,race_reserved_1312,str,flag
+1313,race_reserved_1313,str,flag
+1314,race_reserved_1314,str,flag
+1315,race_reserved_1315,str,flag
+1316,race_reserved_1316,str,flag
+1317,race_reserved_1317,str,flag
+1318,race_reserved_1318,str,flag
+1319,race_reserved_1319,str,flag
+1320,race_reserved_1320,str,flag
+1321,race_reserved_1321,str,flag
+1322,race_reserved_1322,str,flag
+1323,race_reserved_1323,str,flag
+1324,race_reserved_1324,str,flag
+1325,race_reserved_1325,str,flag
+1326,race_reserved_1326,str,flag
+1327,race_reserved_1327,str,flag
+1328,runner_speed_best_HDWBestLifetime,float,
+1329,runner_speed_best_HDWMostRecentYear,float,
+1330,runner_speed_best_HDWSecondYear,float,
+1331,runner_speed_best_HDWTrack,float,
+1332,runner_numstarts_fastDirt,float,
+1333,runner_numwins_fastDirt,float,
+1334,runner_numplace_fastDirt,float,
+1335,runner_numshow_fastDirt,float,
+1336,runner_earnings_fastDirt,float,
+1337,runner_keyTrainerStat_1,str,
+1338,runner_keyTrainerStat_1_numstarts,float,
+1339,runner_keyTrainerStat_1_winPct,float,
+1340,runner_keyTrainerStat_1_itmPct,float,
+1341,runner_keyTrainerStat_1_ROI2,float,
+1342,runner_keyTrainerStat_2,str,
+1343,runner_keyTrainerStat_2_numstarts,float,
+1344,runner_keyTrainerStat_2_winPct,float,
+1345,runner_keyTrainerStat_2_itmPct,float,
+1346,runner_keyTrainerStat_2_ROI2,float,
+1347,runner_keyTrainerStat_3,str,
+1348,runner_keyTrainerStat_3_numstarts,float,
+1349,runner_keyTrainerStat_3_winPct,float,
+1350,runner_keyTrainerStat_3_itmPct,float,
+1351,runner_keyTrainerStat_3_ROI2,float,
+1352,runner_keyTrainerStat_4,str,
+1353,runner_keyTrainerStat_4_numstarts,float,
+1354,runner_keyTrainerStat_4_winPct,float,
+1355,runner_keyTrainerStat_4_itmPct,float,
+1356,runner_keyTrainerStat_4_ROI2,float,
+1357,runner_keyTrainerStat_5,str,
+1358,runner_keyTrainerStat_5_numstarts,float,
+1359,runner_keyTrainerStat_5_winPct,float,
+1360,runner_keyTrainerStat_5_itmPct,float,
+1361,runner_keyTrainerStat_5_ROI2,float,
+1362,runner_keyTrainerStat_6,str,
+1363,runner_keyTrainerStat_6_numstarts,float,
+1364,runner_keyTrainerStat_6_winPct,float,
+1365,runner_keyTrainerStat_6_itmPct,float,
+1366,runner_keyTrainerStat_6_ROI2,float,
+1367,runner_jockey_at_distsurf_label,str,check if exists
+1368,runner_jockey_at_distsurf_starts,float,
+1369,runner_jockey_at_distsurf_wins,float,
+1370,runner_jockey_at_distsurf_place,float,
+1371,runner_jockey_at_distsurf_show,float,
+1372,runner_jockey_at_distsurf_ROI,float,
+1373,runner_jockey_at_distsurf_earnings,float,
+1374,runner_posttime,datetime.time,
+1375,runner_reserved_1375,str,flag
+1376,runner_reserved_1376,str,flag
+1377,runner_reserved_1377,str,flag
+1378,runner_reserved_1378,str,flag
+1379,runner_reserved_1379,str,flag
+1380,runner_reserved_1380,str,flag
+1381,runner_reserved_1381,str,flag
+1382,runner_reserved_1382,str,flag
+1383,pp_comment_longstart_0,str,natural language
+1384,pp_comment_longstart_1,str,natural language
+1385,pp_comment_longstart_2,str,natural language
+1386,pp_comment_longstart_3,str,natural language
+1387,pp_comment_longstart_4,str,natural language
+1388,pp_comment_longstart_5,str,natural language
+1389,pp_comment_longstart_6,str,natural language
+1390,pp_comment_longstart_7,str,natural language
+1391,pp_comment_longstart_8,str,natural language
+1392,pp_comment_longstart_9,str,natural language
+1393,pp_sealed_indicator_0,type_pp_sealed_indicator,
+1394,pp_sealed_indicator_1,type_pp_sealed_indicator,
+1395,pp_sealed_indicator_2,type_pp_sealed_indicator,
+1396,pp_sealed_indicator_3,type_pp_sealed_indicator,
+1397,pp_sealed_indicator_4,type_pp_sealed_indicator,
+1398,pp_sealed_indicator_5,type_pp_sealed_indicator,
+1399,pp_sealed_indicator_6,type_pp_sealed_indicator,
+1400,pp_sealed_indicator_7,type_pp_sealed_indicator,
+1401,pp_sealed_indicator_8,type_pp_sealed_indicator,
+1402,pp_sealed_indicator_9,type_pp_sealed_indicator,
+1403,pp_allweather_flag_0,type_allweather_flag,
+1404,pp_allweather_flag_1,type_allweather_flag,
+1405,pp_allweather_flag_2,type_allweather_flag,
+1406,pp_allweather_flag_3,type_allweather_flag,
+1407,pp_allweather_flag_4,type_allweather_flag,
+1408,pp_allweather_flag_5,type_allweather_flag,
+1409,pp_allweather_flag_6,type_allweather_flag,
+1410,pp_allweather_flag_7,type_allweather_flag,
+1411,pp_allweather_flag_8,type_allweather_flag,
+1412,pp_allweather_flag_9,type_allweather_flag,
+1413,race_reserved_1413,str,flag
+1414,race_reserved_1414,str,flag
+1415,race_reserved_1415,str,flag
+1416,race_reserved_1416,str,flag
+1417,race_reserved_1417,str,flag
+1418,race_military_posttime,datetime.time,
+1419,race_blank_1419,str,flag
+1420,race_blank_1420,str,flag
+1421,race_blank_1421,str,flag
+1422,race_blank_1422,str,flag
+1423,race_blank_1423,str,flag
+1424,race_blank_1424,str,flag
+1425,race_blank_1425,str,flag
+1426,race_blank_1426,str,flag
+1427,race_blank_1427,str,flag
+1428,race_blank_1428,str,flag
+1429,race_blank_1429,str,flag
+1430,race_blank_1430,str,flag
+1431,race_blank_1431,str,flag
+1432,race_blank_1432,str,flag
+1433,race_blank_1433,str,flag
+1434,race_blank_1434,str,flag
+1435,race_blank_1435,str,flag
